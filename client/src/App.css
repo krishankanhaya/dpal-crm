@@ -32,3 +32,12 @@ em{
     display: block;
   }
   .dropdown:hover .dropdown-content {display: block;}
+
+
+  /* UserTable Styling */
+  .MuiTablePagination-actions{
+    display:  flex;
+    margin-right: 2rem;
+    width: 2rem
+  }
+  /* UserTable Styling End */

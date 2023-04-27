@@ -3,7 +3,6 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import CreditCardIcon from '@mui/icons-material/CreditCard';
-
 export default function Cards(props) {
   return (
     <Card style={{'width': '20%', 'background-color': 'pink'}}  sx={{ minWidth: 275 }}>

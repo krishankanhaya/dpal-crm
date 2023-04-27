@@ -1,19 +1,25 @@
 import React from 'react'
 import '../styles/Profile.css'
-import ProfilePic from '../assets/images/ProfilePic.jpg';
+// import ProfilePic from '../assets/images/ProfilePic.jpg';
+import UserTable from '../components/UserTable';
+
+const userData = [
+  { id: 1, Action: 'Vew-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', Purpose: 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 2, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 3, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 4, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 5, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 6, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 7, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 8, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 9, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+  { id: 10, Action: 'view-Edit', 'Lead Assign': 'Rinku', 'Customer Name': 'krishan', 'Email Id': 'krishan@gmail.com', 'Mobile No.': '1234567890', 'Purpose': 'Loan Payment', 'Employee Type': 'Sanctioned', 'Loan Required': 500000,'Monthly Income':'4000', City: 'Banglore', State: 'Goa', Pincode: '123456', Source: 'Website', 'Utm Source': 'Google', Status: 'Fresh Lead', Date: '2023-04-27 17:08:01'},
+];
 
 function User() {
   return (
-    <div>
-        <h2 style={{textAlign: 'center'}}>User Page</h2>
-        <div class="card">
-          <img src={ProfilePic} alt="username" style={{width:'6rem', borderRadius: '4px', marginTop: '1rem'}} />
-          <p class="title">Email :  example@gmail.com</p>
-          <p class="title">Address : US</p>
-          <p class="title">Phone : +1234567890</p>
-          <p class="title">Website : expamle.com</p>
-          <p class="title">Company : example</p>
-        </div>
+    <div style={{ width: '90%', marginLeft: '5%', marginTop: '1rem'}}>
+      <UserTable data={userData} />
     </div>
   )
 }
